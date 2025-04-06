@@ -26,7 +26,7 @@ I create modern, responsive web experiences and design interfaces inspired by my
 
 ## 📸 Preview
 
-![Hero Section](screenshots/1.gif)
+![Hero Section](screenshots/1.png)
 ![Skills Section](screenshots/2.png)
 ![Projects Section](screenshots/3.png)
 ![Projects Section](screenshots/4.png)
