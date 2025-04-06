@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Danial - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      @keyframes introAnim {
+  0% {
+    transform: scale(1.2) rotateY(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1) rotateY(90deg);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(0.95) rotateY(180deg);
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes avatarFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-intro-animation {
+  animation: introAnim 3.5s ease-in-out forwards;
+  transform-style: preserve-3d;
+}
+
+.animate-avatar-fade {
+  animation: avatarFadeIn 1s ease-in-out 3.5s forwards;
+}
+
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <nav
+      class="flex justify-between items-center p-6 shadow-md sticky top-0 bg-white z-50"
+    >
+      <h1 class="text-2xl font-bold text-[#3498db]">Michael Danial</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-[#3498db]">About</a></li>
+        <li><a href="#skills" class="hover:text-[#3498db]">Skills</a></li>
+        <li><a href="#projects" class="hover:text-[#3498db]">Projects</a></li>
+        <li><a href="#contact" class="hover:text-[#3498db]">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="flex flex-col items-center justify-center text-center py-20"
+      data-aos="fade-up"
+    >
+    <div class="relative w-44 h-44 mx-auto mb-6 rounded-full overflow-hidden border-4 border-[#3498db] shadow-lg">
+      
+      <img
+        src="Assest/img/logo.png"
+        alt="Intro Logo"
+        class="absolute top-0 left-0 w-full h-full object-cover animate-intro-animation z-10"
+        style="animation: introAnim 3.5s ease-in-out forwards"
+      />
+    
+
+      <img
+        src="Assest/img/avatar.jpg"
+        alt="Michael Danial"
+        class="absolute top-0 left-0 w-full h-full object-cover opacity-0 animate-avatar-fade z-0"
+        style="animation: avatarFadeIn 1s ease-in-out 3.5s forwards"
+      />
+    </div>
+    
+
+      <h2 class="text-4xl font-bold mb-2">Hi, I'm Michael Danial</h2>
+      <p class="text-lg text-gray-600 mb-4">Full Stack Developer & Designer</p>
+      <div class="flex space-x-4">
+        <!-- <a href="https://www.facebook.com/Mikha.Daniel1995" download class="bg-[#3498db] text-white px-6 py-2 rounded hover:bg-[#2980b9]"> -->
+        <a
+          href="https://www.facebook.com/Mikha.Daniel1995"
+          target="_blank"
+          class="bg-[#3498db] text-white px-6 py-2 rounded hover:bg-[#2980b9]"
+        >
+          <i class="fas fa-download mr-2"></i>Download CV
+        </a>
+        <a
+          href="https://wa.me/201095161434"
+          target="_blank"
+          class="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600"
+        >
+          <i class="fab fa-whatsapp mr-2"></i>WhatsApp Me
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-4xl mx-auto px-6 py-10" data-aos="fade-up">
+      <h3 class="text-2xl font-semibold text-[#3498db] mb-4">👨‍💻 About Me</h3>
+      <p class="text-gray-700 leading-relaxed">
+        I’m Michael Danial, a passionate full stack developer from Egypt. I
+        enjoy building elegant and responsive websites, developing immersive
+        experiences, and creating efficient backend systems.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-50 py-10" data-aos="fade-up">
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-2xl font-semibold text-[#3498db] mb-6">🛠 Skills</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <span class="text-gray-700"
+            ><i class="fas fa-code text-[#5c6bc0]"></i> C#</span
+          >
+          <span class="text-gray-700"
+            ><i class="fas fa-mobile-alt text-[#42a5f5]"></i> Flutter</span
+          >
+          <span class="text-gray-700"
+            ><i class="fas fa-globe text-[#6c757d]"></i> Web Design</span
+          >
+          <span class="text-gray-700"
+            ><i class="fas fa-database text-[#00618a]"></i> SQL Server</span
+          >
+          <span class="text-gray-700"
+            ><i class="fas fa-database text-[#ff6f61]"></i> SQLite</span
+          >
+          <span class="text-gray-700"
+            ><i class="fab fa-laravel text-[#f55247]"></i> Laravel</span
+          >
+          <span class="text-gray-700"
+            ><i class="fas fa-cloud text-[#00bcd4]"></i> Livewire /
+            Jetstream</span
+          >
+          <span class="text-gray-700"
+            ><i class="fab fa-bootstrap text-[#563d7c]"></i> Bootstrap</span
+          >
+          <span class="text-gray-700"
+            ><i class="fab fa-node text-[#3c873a]"></i> Node.js</span
+          >
+          <span class="text-gray-700"
+            ><i class="fab fa-vuejs text-[#41b883]"></i> Vue.js</span
+          >
+          <span class="text-gray-700"
+            ><i class="fas fa-code text-[#9b59b6]"></i> jQuery</span
+          >
+          <span class="text-gray-700"
+            ><i class="fab fa-js-square text-[#f7df1e]"></i> JavaScript</span
+          >
+          <span class="text-gray-700"
+            ><i class="fab fa-php text-[#8892be]"></i> PHP</span
+          >
+          <span class="text-gray-700"
+            ><i class="fab fa-css3-alt text-[#1572b6]"></i> CSS3</span
+          >
+          <span class="text-gray-700"
+            ><i class="fab fa-html5 text-[#e44d26]"></i> HTML5</span
+          >
+          <span class="text-gray-700"
+            ><i class="fas fa-video text-[#e67e22]"></i> Video Editing</span
+          >
+          <span class="text-gray-700"
+            ><i class="fas fa-pen-nib text-[#ff6f61]"></i> Graphic Design</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-10" data-aos="fade-up">
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-2xl font-semibold text-[#3498db] mb-6">📁 Projects</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="bg-white rounded shadow p-4">
+            <h4 class="text-xl font-bold mb-2">Portfolio Website</h4>
+            <p class="text-gray-600">
+              A personal responsive portfolio to showcase my work and contact
+              information.
+            </p>
+          </div>
+          <div class="bg-white rounded shadow p-4">
+            <h4 class="text-xl font-bold mb-2">
+              <i class="fas fa-hourglass-half text-[#ff6f61]"></i>
+              Wait for more <i class="fas fa-arrow-right text-[#ff6f61]"></i>
+            </h4>
+            <p class="text-gray-600">It's just the start by this project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-50 py-10" data-aos="fade-up">
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-2xl font-semibold text-[#3498db] mb-6">
+          📫 Contact Me
+        </h3>
+        <form class="grid grid-cols-1 gap-4 mb-8">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="p-3 border border-gray-300 rounded"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="p-3 border border-gray-300 rounded"
+            required
+          />
+          <textarea
+            placeholder="Your Message"
+            rows="5"
+            class="p-3 border border-gray-300 rounded"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-[#3498db] text-white p-3 rounded hover:bg-[#2980b9]"
+          >
+            Send Message
+          </button>
+        </form>
+        <div class="flex justify-center space-x-6 text-xl">
+          <a
+            href="mailto:michael1101995@gmail.com"
+            class="text-gray-600 hover:text-[#3498db]"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/michaeldanial95"
+            target="_blank"
+            class="text-gray-600 hover:text-[#3498db]"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/michaeldanial95"
+            target="_blank"
+            class="text-gray-600 hover:text-[#3498db]"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/michaeldanial95"
+            target="_blank"
+            class="text-gray-600 hover:text-[#3498db]"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-6 text-sm text-gray-500">
+      © 2025 
+      <a
+        href="https://www.facebook.com/Mikha.Daniel1995"
+        class="inline-flex items-center justify-center gap-1 font-medium"
+        style="color: chocolate;"
+      >
+        <img src="Assest/img/logo.png" alt="Logo" width="30" height="30" class="inline-block rounded-full" />
+        Michael Danial
+      </a>
+      . All rights reserved.
+    </footer>
+    
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

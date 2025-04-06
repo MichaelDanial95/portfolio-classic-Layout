@@ -1,0 +1,13 @@
+# Mac system files
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+
+
