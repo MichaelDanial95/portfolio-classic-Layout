@@ -61,12 +61,12 @@ Font used: `Poppins`, clean and modern.
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/MichaelDanial95/michael-danial-portfolio.git
+   git clone https://github.com/MichaelDanial95/portfolio-classic-Layout.git
    ```
 
 2. Navigate to the folder:
    ```bash
-   cd michael-danial-portfolio
+   cd portfolio-classic-Layout
    ```
 
 3. Open `index.html` in your browser.
