@@ -1,67 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michael Danial - Portfolio</title>
+<!-- Basic Meta Tags -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Michael Danial - Portfolio</title>
+<meta name="description" content="Welcome to the official portfolio of Michael Danial — Developer, Web/App Designer, and Programmer. Discover projects, skills, and contact info." />
+<meta name="keywords" content="Michael Danial, Portfolio, Developer, Web Developer, Programmer, Egypt" />
+<meta name="author" content="Michael Danial" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.facebook.com/Mikha.Daniel1995" />
+<meta property="og:title" content="Michael Danial - Developer Portfolio" />
+<meta property="og:description" content="Explore Michael Danial’s creative projects and web applications. Professional, creative, and passionate about tech." />
+<meta property="og:image" content="https://yourdomain.com/images/og-image.jpg" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://yourdomain.com/" />
+<meta name="twitter:title" content="Michael Danial - Game & Web Developer Portfolio" />
+<meta name="twitter:description" content="Explore Michael Danial’s creative projects and web applications. Professional, creative, and passionate about tech." />
+<meta name="twitter:image" content="https://yourdomain.com/images/og-image.jpg" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="Assest/img/logo2.png" />
+
+<!-- Robots -->
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#1a1a1a" />
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Danial",
+    "alternateName": "Mikha",
+    "url": "https://www.facebook.com/Mikha.Daniel1995",
+    "image": "https://i.imgur.com/Q47kAgJ.jpeg",
+    "jobTitle": "Game & Web Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Online"
+    },
+    "email": "mailto:michael1101995@gmail.com",
+    "telephone": "+20-109-516-1434",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cairo",
+      "addressCountry": "EG"
+    },
+    "sameAs": [
+      "https://www.facebook.com/Mikha.Daniel1995",
+      "https://x.com/MichaelDanail",
+      "https://www.facebook.com/Mikha.Daniel1995",
+      "https://github.com/MichaelDanial95",
+      "https://youtube.com/@michaeldanial95",
+      "https://wa.me/201095161434"
+    ],
+    "description": "Creative and multi-talented developer specializing in development, web apps, and tech innovation. Passionate about learning, support, and sharing knowledge.",
+    "knowsAbout": [
+      "Developer",
+      "Laravel",
+      "Flutter",
+      "SQL Server",
+      "UI/UX Design",
+      "Photoshop",
+      "Video Editing"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Developer",
+      "description": "Designing and developing web applications with modern tools and frameworks."
+    }
+  }
+  </script>
+  
     <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <script src="Assest/js/tailwindcss.js"></script>
     <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      @keyframes introAnim {
-  0% {
-    transform: scale(1.2) rotateY(0deg);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1) rotateY(90deg);
-    opacity: 1;
-  }
-  90% {
-    transform: scale(0.95) rotateY(180deg);
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes avatarFadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.animate-intro-animation {
-  animation: introAnim 3.5s ease-in-out forwards;
-  transform-style: preserve-3d;
-}
-
-.animate-avatar-fade {
-  animation: avatarFadeIn 1s ease-in-out 3.5s forwards;
-}
-
-    </style>
+    <link rel="stylesheet" href="Assest/css/aos.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="Assest/css/main.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <!-- Fonts -->
+    <link href="Assest/css/fonts.css" rel="stylesheet"/>
   </head>
   <body class="bg-white text-gray-800">
     <!-- Navbar -->
@@ -82,22 +108,20 @@
       class="flex flex-col items-center justify-center text-center py-20"
       data-aos="fade-up"
     >
-    <div class="relative w-44 h-44 mx-auto mb-6 rounded-full overflow-hidden border-4 border-[#3498db] shadow-lg">
+
+      <div class="relative w-44 h-44 mx-auto mb-6 rounded-full overflow-hidden avatar-wrapper">
+
       
-      <img
-        src="Assest/img/logo.png"
-        alt="Intro Logo"
-        class="absolute top-0 left-0 w-full h-full object-cover animate-intro-animation z-10"
-        style="animation: introAnim 3.5s ease-in-out forwards"
-      />
+<img src="Assest/img/logo.png"
+     alt="Intro Logo"
+     class="absolute top-0 left-0 w-full h-full object-cover animate-intro-animation z-10" />
+
     
 
-      <img
-        src="Assest/img/avatar.jpg"
-        alt="Michael Danial"
-        class="absolute top-0 left-0 w-full h-full object-cover opacity-0 animate-avatar-fade z-0"
-        style="animation: avatarFadeIn 1s ease-in-out 3.5s forwards"
-      />
+     <img src="Assest/img/avatar.jpg"
+     alt="Michael Danial"
+     class="absolute top-0 left-0 w-full h-full object-cover opacity-0 animate-avatar-fade z-0" />
+
     </div>
     
 

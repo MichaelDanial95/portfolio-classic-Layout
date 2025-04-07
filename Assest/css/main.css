@@ -1,0 +1,61 @@
+body {
+    font-family: "Poppins", sans-serif;
+  }
+
+
+
+
+
+
+  @keyframes introAnim {
+0% {
+transform: scale(1.2) rotateY(0deg);
+opacity: 1;
+}
+50% {
+transform: scale(1) rotateY(90deg);
+opacity: 1;
+}
+90% {
+transform: scale(0.95) rotateY(180deg);
+opacity: 0.2;
+}
+100% {
+opacity: 0;
+}
+}
+
+@keyframes avatarFadeIn {
+0% {
+opacity: 0;
+transform: scale(0.95);
+}
+100% {
+opacity: 1;
+transform: scale(1);
+}
+}
+
+.animate-intro-animation {
+animation: introAnim 3.5s ease-in-out forwards;
+transform-style: preserve-3d;
+}
+
+.animate-avatar-fade {
+animation: avatarFadeIn 1s ease-in-out 3.5s forwards;
+}
+
+
+/* Border and Shadow for Avatar */
+.avatar-wrapper {
+  border-width: 4px;
+  border-color: #3498db;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Logo */
+.footer-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 9999px;
+}
